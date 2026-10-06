@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Penalty Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="game">
+<h1>⚽ PENALTY GAME</h1>
+<div class="info">
+<span>Гол: <b id="goals">0</b></span>
+<span>Аракет: <b id="attempts">0</b>/5</span>
+<span>Упай: <b id="score">0</b></span>
+</div>
+<div id="field">
+<div id="goal"><div class="net"></div><div id="keeper">🧤</div></div>
+<div id="ball">⚽</div>
+<div id="result">Бурчту танда!</div>
+</div>
+<div class="buttons">
+<button onclick="shoot('left')">↖ Сол</button>
+<button onclick="shoot('center')">⬆ Орто</button>
+<button onclick="shoot('right')">↗ Оң</button>
+</div>
+<button id="restart" onclick="restartGame()">🔄 Кайра баштоо</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
